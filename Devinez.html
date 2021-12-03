@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<body>
+    <div class="div1principale">
+        <div>
+            <img class="numbers" src="images/numbers.jpg" alt="numbers">
+        </div>
+        <div>
+            <div class="backgroundsweerty">
+                <h1>SWERTY</h1>
+            </div>
+            <div class="backgroundinstruction">
+              <h2>instruction ::</h2>
+              <ul>
+                  <li> Essayez de deviner un nombre entre 1 et 100 qui est caché par votre  ordinateur.</li>
+                  <li> vous allez perdre  le jeu si vous ratez dix fois.</li>
+              </ul>
+            </div>
+            <div class="rowimputers">
+              <div>
+                  <input type="number" id="valeurentré" placeholder="ENTREZ LE NOMBRE QUE VOUS AVEZ DEVINEZ !">
+              </div>
+              <div class="lamp">
+                   <img id="Lampenonallumé" src="images/Doré et Violet Illustré Lampe Ramadan Invitation (1).png" alt="Lampe non allumé">
+              </div>
+              <div class="nbr">
+              <h2 id="nbrchances">10</h2> 
+              </div>
+            </div>
+            <div class="backgroudred">
+                <li id="li_cas">----------------------------------------------</li>
+            </div>
+            <li class="backgroudnone" id="backgroudnone">----------------------------------------------</li>
+            <button onclick="test()" id="confirmer">Entrer votre nombre à deviner</button>
+        </div>
+    </div>
+    <hr class="fonthr">
+    <div class="divprincipale2">
+        <div>
+            <img id="try" src="images/Untitled design (6).png" alt="try">
+        </div>
+        <div>
+           <h2 id="commande">Essayez !!!</h2>
+           <h2 id="command2"></h2>
+        </div>
+        <div>
+            <button id="REJOUER" onclick="rejouer()">
+                <div class="divbtn">
+                <i class="fas fa-history"></i>
+                <h2>REJOUER</h2>
+                </div>
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="thegame.js">
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="javascript" type="text/javascript">
+        var N ;
+        var swerty = 5;
+        for(i=1;i<=10;i++){
+            N = parseInt(prompt("Devinez N !"))
+            if(N==swerty){
+                switch(i){
+                    case 1:
+                    case 2:
+                        alert("Bravo, vous etes un Génie !!!");
+                        i=11;
+                    break;
+                    default:
+                        alert("Félicitations, vous avez gagné après "+i+" tentatives");
+                        i=11;
+                    break;
+                }
+            }
+            else if(i==10 && N!=swerty){
+                    alert("C'est raté !!");
+            }else{
+                if(N>swerty && (N<=100 && N>0)){alert("votre nombre est plus grand à la valeur recherchée")}
+                else if(N<swerty && (N<=100 && N>0)){alert("votre nombre est plus petit à la valeur recherchée")}
+            }
+            if(N!=swerty){
+                if(N>100 || N<=0){
+            alert("Entrer un autre nombre entre 1 et 100 S'il vous plait !");
+                        }
+                        else if(N<=100 && N>0){     
+            alert("le nombre des tentatives restants est : "+(10-i));
+                        }
+                    }    
+            }
+            
+    </script>
+</head>
+<body>
+  
+
+</body>
+</html>

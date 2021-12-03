@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script lang="javascript" type="text/javascript">
+         let A = parseInt(prompt("Entrez A !"));
+         let B = parseInt(prompt("Entrez B !"));
+         let choix = (prompt("Choisissez l'opération qui vous convient parmi (+,-,/,*) !"));
+         switch(choix){
+             case "+" :
+                 alert("la somme des deux A et B est : "+(A+B));
+                 break;
+                 case "-" :
+                 alert("le résultat de A-B est : "+(A-B));
+                 break;
+                 case "*" :
+                 alert("le produit de A et B est : "+(A*B));
+                 break;
+                 case "/" :
+                     while(B==0){alert("la division est impossible sur 0 Entrez un autre nombre differnt de 0");
+                     let B = parseInt(prompt("Entrez B !"));
+                     alert("la division de A sur B est : "+(A/B));
+                    }
+                 alert("la division de A sur B est : "+(A/B));
+                 break;
+         }
+    </script>
+</body>
+</html>
