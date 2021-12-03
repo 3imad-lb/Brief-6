@@ -1,5 +1,5 @@
 var i=0;
-var swerty=5;
+var swerty=Math.floor(Math.random() * 10) + 1;
 
 function test(){
     i++
